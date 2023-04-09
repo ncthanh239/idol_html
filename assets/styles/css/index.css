@@ -1,0 +1,19 @@
+@import url('./header.css');
+@import url('./sidebar.css');
+@import url('./revenue.css');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-setting {
+    background-color: #F7F8FC;
+    min-height: 100vh;
+}
+
+.container-setting {
+    padding-top: 36px;
+}
