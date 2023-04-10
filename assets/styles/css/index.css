@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./sidebar.css');
 @import url('./revenue.css');
+@import url('./setting.css');
 
 * {
     font-family: 'Montserrat', sans-serif;
