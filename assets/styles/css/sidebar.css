@@ -1,6 +1,7 @@
 
 .sidebar {
     width: 300px;
+    /* display: block; */
 }
 .sibar-user-info {
     background-color: #D8DCEB;
@@ -49,7 +50,7 @@
 }
 
 #btn-change-avatar {
-    background-color: #185ADD;
+    background-color: #ACB2CA;
     color: #fff;
     font-size: 16px;
     font-weight: normal;
@@ -59,12 +60,16 @@
     border: none;
 }
 
+#btn-change-avatar:hover {
+    background-color: #185ADD;
+}
+
 .main-content {
     transition: margin-left .5s;
 }
 
 #open-sidebar {
-    display: none;
+    /* display: none; */
     margin-left: auto;
     position: fixed;
     top: 80px;
@@ -82,12 +87,8 @@
         z-index:10;
     }
 
-    .collapse:not(.show) {
-        display: none;
-    }
-
     #open-sidebar {
-       display: block;
+       /* display: block; */
        margin-left: auto;
        position: fixed;
        outline: none;

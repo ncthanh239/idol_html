@@ -64,14 +64,9 @@ nav.navbar {
     padding: 0 10px;
 }
 
-.navbar-nav .nav-item:first-child {
-    /* margin-left: 90px; */
-}
-
 .navbar-nav .nav-item {
     padding:0 24px;
     text-align: center;
-    /* border-right: 2px solid #C1C1C1; */
     line-height: 32px;
 }
 
@@ -93,6 +88,10 @@ nav.navbar {
 .is-badge {
     width: 15px;
     height: 15px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
     border-radius: 50%;
     background-color: red;
     position: absolute;
