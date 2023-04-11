@@ -13,3 +13,9 @@
 .chart-two {
     margin-bottom: 250px;
 }
+
+@media (max-width: 992px) {
+    .chart-one, .chart-two {
+        padding: 0;
+    }
+}
