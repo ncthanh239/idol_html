@@ -1,0 +1,15 @@
+.chart-one, .chart-two {
+    /* width: 845px; */
+    /* height: 473px; */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.chart-one {
+    margin-bottom: 10px;
+}
+
+.chart-two {
+    margin-bottom: 250px;
+}
