@@ -57,7 +57,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-regular fa-comment" style="font-size: 1.73em;"></i>
-                                <div class="is-badge"></div>
+                                <div class="is-badge">2</div>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -72,7 +72,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-earth-americas" style="font-size: 1.73em;"></i>
-                                <div class="is-badge"></div>
+                                <div class="is-badge">5</div>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -98,11 +98,11 @@
             </div>
         </nav>
         <div class="container container-setting">
-            <button id="open-sidebar" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+            <button id="open-sidebar" class="d-block d-lg-none d-xl-none d-xxl-none" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="row">
-                <div class="col-lg-3 sidebar collapse collapse-horizontal" style="min-height: 120px;" id="sidebar">
+                <div class="col-lg-3 sidebar collapse collapse-horizontal d-xl-block" style="min-height: 120px;" id="sidebar">
                     <div class="sibar-user-info">
                         <img src="../assets/images/avatar.png" class="img-responsive" alt="Image">
                         <div class="username">Phương Linh</div>
@@ -402,7 +402,55 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="other-tab-pane" role="tabpanel" aria-labelledby="other-tab" tabindex="0">456</div>
+                        <div class="tab-pane fade" id="other-tab-pane" role="tabpanel" aria-labelledby="other-tab" tabindex="0">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 pb-4">
+                                        <label for="linkFB" class="form-label">Link Fanpage/Facebook:</label>
+                                        <input type="text" id="linkFB" class="form-control input-custom fw-bolder" value="https://facebook.com/1209129129128">
+                                    </div>
+                                    <div class="col-12 pb-4">
+                                        <label for="linkYT" class="form-label">Youtube Channel:</label>
+                                        <input type="text" id="linkYT" class="form-control input-custom fw-bolder" value="">
+                                    </div>
+                                    <div class="col-12 pb-4">
+                                        <label for="linkHL" class="form-label">link video highlight(Youtube):</label>
+                                        <input type="text" id="linkHL" class="form-control input-custom fw-bolder" value="">
+                                    </div>
+                                    <div class="col-12 pb-4">
+                                        <label for="linkRoom" class="form-label">Link Room Voice(Alo Alo, Discord .v.v):</label>
+                                        <input type="text" id="linkRoom" class="form-control input-custom fw-bolder" value="">
+                                    </div>
+                                    <div class="col-12 pb-4">
+                                        <label for="linkSkype" class="form-label">Skype:</label>
+                                        <input type="text" id="linkSkype" class="form-control input-custom fw-bolder" value="">
+                                    </div>
+                                    <div class="col-12 col-md-6 pb-4">
+                                        <label for="owner" class="form-label">Tình trạng Microphone:</label>
+                                        <select class="form-select select-field" aria-label="Default select example">
+                                            <option selected>Không, tôi không thể nói chuyện</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <i class="fa-solid fa-sort-down"></i>
+                                    </div>
+                                    <div class="col-12 col-md-6 pb-5">
+                                        <label for="accountNumber" class="form-label">Tình trạng webcam</label>
+                                        <select class="form-select select-field" aria-label="Default select example">
+                                            <option selected>Không, tôi không thể bật webcam</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <i class="fa-solid fa-sort-down"></i>
+                                    </div>
+                                    <div class="col-12 pb-4 text-center">
+                                        <button class="btn-update">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                       </div>
                 </div>
             </div>
