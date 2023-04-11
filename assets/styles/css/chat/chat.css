@@ -12,7 +12,7 @@ body{margin-top:20px;}
     display: flex;
     flex-direction: column;
     max-height: 800px;
-    overflow-y: scroll
+    overflow-y: auto
 }
 
 .chat-message-left,
@@ -32,14 +32,44 @@ body{margin-top:20px;}
     gap: 0 10px;
 }
 
-.chat-messages .you {
+.chat-messages .you::before {
+  content: "";
   background-color: #185ADD !important;
   color: #fff;
+  position: absolute;
+  right: -3px;
+  display: block;
+  width: 11px;
+  height: 10px;
+  top: calc(50% - 0.3em);
+  transform: rotate(29deg) skew(-35deg);
+}
+
+.chat-messages .you {
+  position: relative;
+  display: inline-block;
+  background-color: #185ADD !important;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.chat-messages .friend::before {
+  content: "";
+  background-color: #fff !important;
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  left: -3px;
+  top: calc(50% - 0.3em);
+  transform: rotate(29deg) skew(-35deg);
 }
 
 .chat-messages .friend {
+  position: relative;
+  display: inline-block;
   background-color: #fff !important;
   color: black;
+  border-radius: 30px;
 }
 .py-3 {
     padding-top: 1rem!important;
@@ -66,7 +96,7 @@ body{margin-top:20px;}
 }
 
 .double-menu-active {
-  border-bottom: 2px solid #195ADD;
+  border-bottom: 3px solid #195ADD;
   font-weight: 600;
 }
 
@@ -258,4 +288,159 @@ body{margin-top:20px;}
   font-size: 14px;
   color: #5D647E
 }
+
+
+.write {
+  /* border: 1px solid var(--light); */
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 72px;
+  border-radius: 15px;
+}
+.write input {
+  font-size: 16px;
+  float: left;
+  width: calc(100% - 140px);
+  margin-left: 20px;
+  height: 100%;
+  padding: 0 10px;
+  border: 0;
+  outline: none;
+  background-color: #FFFFFF;
+}
+.write .write-link.attach:before {
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 100%;
+  content: '';
+  background-image: url('../../../images/attach.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.write .write-link.smiley:before {
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 100%;
+  content: '';
+  background-image: url('../../../images/image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.write .write-link.send:before {
+  display: inline-block;
+  float: left;
+  margin-top: 3px;
+  width: 50px;
+  height: 100%;
+  content: '';
+  background-image: url('../../../images/sent.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #749CEB;
+  color: #749CEB;
+  box-shadow: 9999px 0 0 -5px;
+  animation: dot-pulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+.dot-pulse::before, .dot-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #185ADD;
+  color: #185ADD;
+}
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px;
+  animation: dot-pulse-before 1.5s infinite linear;
+  animation-delay: 0s;
+}
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px;
+  animation: dot-pulse-after 1.5s infinite linear;
+  animation-delay: 0.5s;
+  background-color: #B5CAF4;
+  color: #B5CAF4;
+}
+
+@keyframes dot-pulse-before {
+  0% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+}
+@keyframes dot-pulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+}
+@keyframes dot-pulse-after {
+  0% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+}
+
+.waiting-reply {
+  margin-left: 25px;
+  font-size: 15px;
+  color: #C4C7D7;
+}
+
+.typing {
+  position: sticky;
+  bottom: 150px;
+}
+
+.typing-rounded {
+  background: #fff;
+  width: 180px;
+  padding: 8px 20px 8px 25px;
+  border-radius: 20px;
+}
+
+.search-ico {
+  top: 25%;
+  bottom: 25%;
+  align-items: center;
+  display: flex;
+  right: 3px;
+  opacity: 0.5;
+}
+
+.write-wrapper {
+  position: sticky;
+  bottom: -2px;
+  width: 100%;
+}
+
 
