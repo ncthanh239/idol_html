@@ -88,6 +88,10 @@ nav.navbar {
 .is-badge {
     width: 15px;
     height: 15px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
     border-radius: 50%;
     background-color: red;
     position: absolute;

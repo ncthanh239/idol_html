@@ -1,6 +1,7 @@
 
 .sidebar {
     width: 300px;
+    /* display: block; */
 }
 .sibar-user-info {
     background-color: #D8DCEB;
@@ -68,7 +69,7 @@
 }
 
 #open-sidebar {
-    display: none;
+    /* display: none; */
     margin-left: auto;
     position: fixed;
     top: 80px;
@@ -86,12 +87,8 @@
         z-index:10;
     }
 
-    .collapse:not(.show) {
-        display: none;
-    }
-
     #open-sidebar {
-       display: block;
+       /* display: block; */
        margin-left: auto;
        position: fixed;
        outline: none;
