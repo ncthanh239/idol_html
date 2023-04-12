@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều kiện player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/styles/css/index.css">
+    <link rel="stylesheet" href="../assets/styles/css/player.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../assets/styles/js/sidebar.js"></script>
+</head>
+
+<body>
+    <div class="main-setting">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="input-header">
+                        <input class="form-control me-2" type="search" placeholder="Nick name/ URL" aria-label="Search">
+                        <button class="btn btn-outline" type="submit">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Cộng đồng</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lĩnh vực</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BXH</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-comment" style="font-size: 1.73em;"></i>
+                                <div class="is-badge">2</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-earth-americas" style="font-size: 1.73em;"></i>
+                                <div class="is-badge">5</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item account-item">
+                            <div class="img-avatar">
+                                <img src="../assets/images/avatar.png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <div>Ngọc Linh</div>
+                                <div class="money">155.000 đ</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container container-setting">
+            <button id="open-sidebar" class="d-block d-lg-none d-xl-none d-xxl-none" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="row">
+                <div class="col-lg-3 sidebar collapse collapse-horizontal d-xl-block" style="min-height: 120px;" id="sidebar">
+                    <div class="sibar-user-info">
+                        <img src="../assets/images/avatar.png" class="img-responsive" alt="Image">
+                        <div class="username">Phương Linh</div>
+                        <button id="btn-change-avatar">
+                            <i class="fa-solid fa-camera"></i>
+                            Đổi ảnh đại diện
+                        </button>
+                    </div>
+                    <div class="menu-sidebar">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Thống kê</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Thông tin</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Cài đặt</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Donate</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Lịch sử</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Sổ đen</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div>Rút tiền</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="dieukienplayer.html" class="list-group-item list-group-item-action active">
+                                <div>Điều kiện player</div>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-content" id="main-content">
+                    <form class="form-inline" action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="" class="form-label">ĐIỀU KIỆN HOT PLAYER</label>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">0đ/200.000đ</span>
+                                    <span class="text-center item-condition-two">Doanh thu 7 ngày</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">2/4</span>
+                                    <span class="text-center item-condition-two">Đánh giá trung bình</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">5/5</span>
+                                    <span class="text-center item-condition-two">Lượt đánh giá</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">0%/50%</span>
+                                    <span class="text-center item-condition-two">Tỷ lệ hoàn thành</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="" class="form-label">ĐIỀU KIỆN VIP PLAYER</label>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">0đ/500.000đ</span>
+                                    <span class="text-center item-condition-two">Doanh thu 7 ngày</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">2/4.5</span>
+                                    <span class="text-center item-condition-two">Đánh giá trung bình</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">5/10</span>
+                                    <span class="text-center item-condition-two">Lượt đánh giá</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 pb-4">
+                                <div class="form-control item-condition">
+                                    <span class="text-center item-condition-one">0%/80%</span>
+                                    <span class="text-center item-condition-two">Tỷ lệ hoàn thành</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
