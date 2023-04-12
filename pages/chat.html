@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/styles/css/index.css">
+    <link rel="stylesheet" href="../assets/styles/css/chat/chat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../assets/styles/js/sidebar.js"></script>
+</head>
+
+<body>
+    <div class="main-setting">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="input-header">
+                        <input class="form-control me-2" type="search" placeholder="Nick name/ URL" aria-label="Search">
+                        <button class="btn btn-outline" type="submit">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Cộng đồng</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lĩnh vực</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BXH</a>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-comment" style="font-size: 1.73em;"></i>
+                                <div class="is-badge"></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-earth-americas" style="font-size: 1.73em;"></i>
+                                <div class="is-badge"></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <div class="straight-line"></div>
+                        <li class="nav-item account-item">
+                            <div class="img-avatar">
+                                <img src="../assets/images/avatar.png" alt="">
+                            </div>
+                            <div class="user-info">
+                                <div>Ngọc Linh</div>
+                                <div class="money">155.000 đ</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container container-setting">
+            <button id="open-sidebar" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <div id="conservation-area-content"></div>
+            </div>
+            <div class="chat">
+              <main class="content" id="main">
+                <div class="container p-0">
+                  <div class="card border-0">
+                    <div class="row g-0">
+                      <div class="col-12 col-lg-5 col-xl-4 border-right conservation-area-wrapper">
+                        <div class="rounded">
+                          <div class="px-4 d-md-block">
+                            <div class="d-flex align-items-center">
+                              <div class="flex-grow-1 position-relative">
+                                <input type="text" class="form-control my-3 border-0 shadow-none" placeholder="Search...">
+                                <div class="position-absolute search-ico">
+                                  <i class="fa-solid fa-search"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center double-menu">
+                              <div class="double-menu-message double-menu-active">Tin nhắn</div>
+                              <div><span style="opacity: 0.4">|</span></div>
+                              <div class="double-menu-follow double-menu-deactive">Theo dõi</div>
+                            </div>
+                          </div>
+                          <div class="conservation-area">
+                            <div class="msg online">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg online">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg online">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg online">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                          </div>
+                        </div>
+                        
+                        <hr class="d-block d-lg-none mt-1 mb-0">
+                      </div>
+                      <div class="col-12 col-lg-7 col-xl-8 message-box-wrapper position-relative">
+                        <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                          <div class="d-flex align-items-center py-1">
+                            <div class="flex-grow-1 pl-3">
+                              <strong class="first-player">Mai Trang Huynh</strong> <strong>-</strong> <strong class="second-player">Luno Cute</strong>
+                              <div class="d-flex align-items-center donate-wrapper">
+                                <div>
+                                  <span class="badge rounded-pill bg-secondary donate-tag">Donate</span>
+                                </div>
+                                <div class="donate-battle">
+                                  <img class="player" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                                  <div class="donate-info">
+                                    <div class="donate-money">30000 đ</div>
+                                    <div class="donate-time">00:00:00</div>
+                                  </div>
+                                  <img class="player" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="duo-result">
+                              <div class="noti-icon">
+                                <img class="first-icon" src="../assets/images/head.png" alt="" />
+                                <img class="second-icon" src="../assets/images/fb.png" alt="" />
+                              </div>
+                              <div class="duo-status mt-3">Đã hoàn thành Duo</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="position-relative">
+                          <div class="chat-messages p-4">
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat deni.
+                              </div>
+                            </div>
+                            <div class="chat-message-left pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 ml-3 friend">
+                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                              </div>
+                            </div>
+                            <div class="chat-message-left pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 ml-3 friend">
+                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                            <div class="chat-message-right pb-4 align-items-center">
+                              <div>
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                              </div>
+                              <div class="flex-shrink-1 bg-light py-2 px-3 mr-3 you">
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="typing d-flex justify-content-center">
+                          <div class="typing-rounded d-flex align-items-center">
+                            <div class="stage">
+                              <div class="dot-pulse"></div>
+                            </div>
+                            <span class="waiting-reply">Đang trả lời</span>
+                          </div>
+                        </div>
+                        <div class="write-wrapper">
+                          <div class="write">
+                            <input type="text" placeholder="Nhập tin nhắn..."/>
+                            <a href="javascript:;" class="write-link smiley"></a>
+                            <a href="javascript:;" class="write-link attach"></a>
+                            <a href="javascript:;" class="write-link send"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+  function openNav() {
+    $('#conservation-area-content').empty().append($('.conservation-area-wrapper').html())
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+</html>

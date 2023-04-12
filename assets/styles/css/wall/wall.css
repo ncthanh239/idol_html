@@ -1,0 +1,335 @@
+.avatar {
+  position: relative;
+}
+.avatar .avatar-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: none;
+}
+
+.avatar.online:before {
+  content: "";
+  position: absolute;
+  background-color: #23be7e;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  right: 10px;
+  top: 20px;
+}
+.avatar-status {
+  color: #185ADD;
+  font-weight: 600;
+  font-size: 22px;
+}
+.date-register {
+  color: #333333;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.banner-head__profile__name {
+  color: #333333;
+  font-weight: 700;
+  font-size: 35px;
+  /* line-height: 26px; */
+}
+
+
+
+
+.rate-count {
+  color: #A1A5BB;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.banner-wrapper {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 0 90px 0;
+}
+
+.banner-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.banner-head-profile {
+  align-items: baseline;
+  gap: 0 5px;
+}
+
+.banner-head__profile__rate {
+  gap: 0 5px;
+}
+
+.banner-head-profile, .banner-head__profile__name {
+  /* line-height: 26px; */
+}
+
+.banner-head__profile__price {
+  color: #185ADD;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.fb-link {
+  cursor: pointer;
+}
+
+.fb-follow {
+  background-color: #185ADD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.fb-follow span {
+  margin-left: 5px;
+}
+.banner-head__follow {
+  gap: 0 5px;
+}
+
+.banner-user-info {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  padding: 15px 0;
+}
+
+.banner-user-info .follower-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.banner-user-info .follower-number {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.banner-user-info .follower-title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.banner-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rent-now {
+  cursor: pointer;
+  background-color: #185ADD;
+  padding: 10px 60px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.donate {
+  cursor: pointer;
+  background-color: #185ADD;
+  padding: 10px 60px;
+  border-radius: 30px;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+.chat {
+  cursor: pointer;
+  background-color: #FFAF25;
+  padding: 10px 60px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content-wrapper, .top-donate {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+.content-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.content-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.content-detail {
+  white-space: pre-line;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 35px
+}
+
+.album {
+  gap: 10px 10px;
+  flex-flow: wrap;
+  display: flex;
+}
+
+.album .item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.album .item img {
+  height: 155px;
+  width: 155px;
+}
+
+.data-table .td-idx {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.data-table .td-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.data-table .td-money {
+  font-size: 18px;
+  font-weight: 500;
+  color: #185ADD;
+}
+
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.recommend-user {
+  display: flex;
+  gap: 0 15px;
+}
+
+.user-recommend .user-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #185ADD;
+}
+
+.user-recommend .recommend-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: #858AA1;
+}
+
+.recommend-user .avatar .avatar-img {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  object-fit: none;
+}
+
+.recommend-content {
+  white-space: pre-line;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.recommend-star {
+  text-align: right;
+}
+
+.recommend-star .star {
+  line-height: 10px;
+}
+
+.recommend-star .rent-time {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-view-more {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #185ADD;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+  .banner-head-profile {
+    flex-direction: column;
+  }
+  .banner-action {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .banner-action .rent-now, .banner-action .donate, .banner-action .chat {
+    text-align: center;
+  }
+  .content-video iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .banner-head-profile {
+    flex-direction: column;
+  }
+  .banner-head {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-head__profile__price {
+    text-align: center;
+  }
+
+  .avatar .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .avatar.online:before {
+    right: 0;
+    top: 10px;
+  }
+}
+
