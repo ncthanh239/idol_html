@@ -31,6 +31,18 @@
   margin-bottom: 10px;
 }
 
+.top-one-person .image-wrap {
+  position: relative;
+}
+
+.top-one-person .image-wrap .avatar-top {
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  width: 51px;
+}
+
 .top-one-person img {
   width: 100px;
 }
