@@ -99,11 +99,10 @@
             </div>
         </nav>
         <div class="container container-setting">
-            <button id="open-sidebar" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar" onclick="openNav()">
+            <button id="open-sidebar" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar" onclick="toggleNav()">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div id="mySidebar" class="sidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
               <div id="conservation-area-content"></div>
             </div>
             <div class="chat">
@@ -174,6 +173,45 @@
                                 </div>
                                <div class="msg-content">
                                 <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
+                               </div>
+                              </div>
+                             </div>
+                             <div class="msg busy">
+                              <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+                              <div class="msg-detail">
+                                <div class="d-flex justify-content-between">
+                                  <div class="msg-username">Thùy Linh</div>
+                                  <div class="msg-date">20 phút trước</div>
+                                </div>
+                               <div class="msg-content">
+                                <span class="msg-message">Vào game không anh ơi Vào game không anh ơi Vào game không anh ơi</span>
+                                
                                </div>
                               </div>
                              </div>
@@ -410,7 +448,18 @@
     </div>
 </body>
 <script>
+  let isOpenNav = false
+  function toggleNav() {
+    if (!isOpenNav) {
+      openNav()
+      isOpenNav = true
+    } else {
+      closeNav()
+      isOpenNav = false
+    }
+  }
   function openNav() {
+
     $('#conservation-area-content').empty().append($('.conservation-area-wrapper').html())
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
