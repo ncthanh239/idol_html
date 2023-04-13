@@ -1,0 +1,92 @@
+#rankingModal .modal-content {
+  background-color: #F7F8FC;
+}
+.ranking-title {
+  font-weight: 600;
+  font-size: 25px;
+  color: #333333;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.ranking-tab ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ranking-tab li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+
+.top-one-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.top-one-person img {
+  width: 100px;
+}
+
+.top-one-person .person-name {
+  font-weight: 700;
+  font-size: 25px;
+  color: #185ADD;
+}
+
+.top-one-person .money {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+}
+
+.ranking-row-data {
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+
+.ranking-row-data .avatar img {
+  width: 43px;
+  border-radius: 50%;
+}
+
+.ranking-row-data .avata-user {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.ranking-row-data .avata-user .user-name, .ranking-row-data .money, .ranking-row-data .idx {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.ranking-row-wrapper {
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.close-modal-ranking {
+  background-color: #BCC2D8;
+  font-weight: 600;
+  font-size: 16px;
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1024px){
+  #rankingModal .modal-content {
+    width: 676px;
+  }
+}
