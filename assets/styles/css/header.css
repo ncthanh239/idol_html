@@ -85,6 +85,158 @@ nav.navbar {
     color: #185ADD;
 }
 
+.dropdown-notification {
+    width: 580px;
+    height: 560px;
+    left: -450px !important;
+    top: 54px !important;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.03);
+
+}
+
+.dropdown-chat {
+    width: 520px;
+    height: 560px;
+    left: -395px !important;
+    top: 54px !important;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.03);
+
+}
+
+.dropdown-info {
+    width: 350px;
+    height: 320px;
+    left: -145px !important;
+    top: 60px !important;
+    border: none;
+    padding-top: 0;
+    border-radius: 20px;
+}
+
+.info-chat {
+    padding: 6px 20px;
+    width: 100%;
+}
+
+.chat-from {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    height: 18px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.chat-datetime {
+    color: #c4c7d7;
+    font-weight: 400;
+}
+
+.message-info {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.message-info i {
+    color: #c4c7d7 !important;
+}
+
+.dropdown-body {
+    height: 560px;
+    overflow-y: scroll;
+}
+
+.user-id {
+    background-color: #e9ebf4;
+    height: 70px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.user-id span {
+    font-weight: 600;
+}
+
+.item-setting {
+    display: flex;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.item-setting:hover {
+    background-color: #e9ebf4;
+}
+
+.item-setting img {
+    margin-right: 20px;
+}
+
+.arrow-dropdown {
+    position: absolute;
+    z-index: 1000;
+    right: 70px;
+    top: -20px;
+    width: 0;
+	height: 0;
+    border-left: 12px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 20px solid #F9F9F9;
+}
+
+.arrow-dropdown-setting {
+    position: absolute;
+    z-index: 1000;
+    right: 70px;
+    top: -20px;
+    width: 0;
+	height: 0;
+    border-left: 12px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 20px solid #e9ebf4;
+}
+
+.item-noti {
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.item-noti .avatar {
+    width: 50px;
+}
+
+.item-noti img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.info-noti{
+   font-size: 16px;
+   margin-left: 16px;
+}
+
+.noti {
+   line-height: 18px;
+ }
+
+ .noti-datetime {
+    font-size: 14px;
+    color: #c4c7d7;
+ }
+
+
+.noti span {
+    font-weight: 600;
+ }
+
 .is-badge {
     width: 15px;
     height: 15px;
@@ -131,6 +283,25 @@ nav.navbar {
     background: #C1C1C1;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ebedf4;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c4c7d7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c4c7d7;
+}
+
 @media (max-width: 992px) {
     .straight-line {
         height: 2px;
@@ -152,7 +323,39 @@ nav.navbar {
         right: -12px;
     }
 
-    .dropdown-menu {
-        visibility: hidden;
+    .navbar-nav .dropdown-menu {
+        position: inherit !important;
+    }
+
+    .dropdown-notification {
+        width: 580px;
+        height: 580px;
+        left: -276px !important;
+        top: 0 !important;
+        border: none;
+        border-radius: 20px;
+        border: 1px solid #ebedf4;
+    }
+
+    .dropdown-chat {
+        width: 520px;
+        height: 580px;
+        left: -255px !important;
+        top: 0 !important;
+        border: none;
+        border-radius: 20px;
+        border: 1px solid #ebedf4;
+    }
+
+    .dropdown-info {
+        left: -64px !important;
+    }
+
+    .arrow-dropdown, .arrow-dropdown-setting {
+        display: none;
+    }
+
+    .account-item {
+        width: 100% !important;
     }
 }

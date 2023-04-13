@@ -1,7 +1,6 @@
 
 .sidebar {
-    max-width: 300px;
-    /* display: block; */
+    width: 300px;
 }
 .sibar-user-info {
     background-color: #D8DCEB;
@@ -69,7 +68,6 @@
 }
 
 #open-sidebar {
-    /* display: none; */
     margin-left: auto;
     position: fixed;
     top: 80px;
@@ -88,7 +86,6 @@
     }
 
     #open-sidebar {
-       /* display: block; */
        margin-left: auto;
        position: fixed;
        outline: none;
