@@ -143,12 +143,13 @@
 }
 .donate {
   cursor: pointer;
-  background-color: #185ADD;
+  background-color: #ffff;
   padding: 10px 60px;
   border-radius: 30px;
   color: black;
   font-size: 18px;
   font-weight: 700;
+  border: 1px solid #185ADD;
 }
 .chat {
   cursor: pointer;
