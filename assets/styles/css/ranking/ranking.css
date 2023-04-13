@@ -88,5 +88,7 @@
 @media screen and (min-width: 1024px){
   #rankingModal .modal-content {
     width: 676px;
+    transform: translateX(-88px);
+
   }
 }
