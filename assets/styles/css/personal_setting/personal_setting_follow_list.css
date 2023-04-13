@@ -1,0 +1,129 @@
+.data-report {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.data-report-tr {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 10px 0;
+}
+
+.column-data {
+  text-align: center;
+}
+
+.column-data .money {
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+}
+
+.data-report-thead {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-report-thead .thead {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  margin-left: auto;
+}
+.data-report-thead .slash {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.column-data .title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+}
+
+#data-report-thead-duo {
+  width: 22%;
+}
+#data-report-thead-created {
+  width: 22%;
+}
+#data-report-thead-status {
+  width: 22%;
+}
+#data-report-thead-player {
+  width: 34%;
+}
+
+.data-report-row {
+  display: flex;
+}
+
+.dou-td {
+  color: #185ADD;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 22%;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.created-td {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px;
+  width: 22%;
+}
+
+.player-td {
+  width: 34%;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 20px;
+}
+
+.player-td .ava-img {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.status-td {
+  width: 22%;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.done {
+  color: #20B739;
+}
+
+.cancel {
+  color: #E01E1E
+}
+
+.data-report-row {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin: 5px 0;
+}
+
