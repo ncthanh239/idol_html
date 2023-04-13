@@ -1,6 +1,6 @@
 
 .sidebar {
-    width: 300px;
+    max-width: 300px;
 }
 .sibar-user-info {
     background-color: #D8DCEB;
