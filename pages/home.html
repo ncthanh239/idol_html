@@ -259,7 +259,7 @@
                                             <div class="user-id">
                                                 ID: <span>7hd7yas7ha7dgas7gda76asga</span>
                                             </div>
-                                            <div class="item-setting">
+                                            <div class="item-setting" data-bs-toggle="modal" data-bs-target="#modalMoneycharge">
                                                 <img src="../assets/images/plus.png" alt="">
                                                 Nạp tiền
                                             </div>
@@ -774,6 +774,90 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalMoneycharge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content modal-money-charge-content">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Nạp tiền vào <strong>IDOL.SGOPAY.VN</strong>
+                  </h5>
+                  <button type="button" class="btn-close-money-charge" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="charge-type" data-bs-toggle="collapse" href="#phone-card">
+                    <div class="charge-icon">
+                        <img src="../assets/images/card.png" />
+                    </div>
+                    <div class="charge-content">
+                        <div class="charge-title">Nạp tiền bằng thẻ cào</div>
+                        <div class="charge-detail">Thẻ điện thoại</div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="phone-card">
+                    <div class="card card-body">
+                      <div class="row">
+                        <div class="col-6 form-group">
+                            <label class="series-card-title" for="">Số series:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6 form-group">
+                            <label class="series-card-title" for="">Số series:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="text-center mt-4 mb-4">
+                        <button class="btn-money-charge-submit border-0">Nạp tiền</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="charge-type" data-bs-toggle="collapse" href="#atm">
+                    <div class="charge-icon">
+                        <img src="../assets/images/atm.png" />
+                    </div>
+                    <div class="charge-content">
+                        <div class="charge-title">Thanh toán trực tiếp qua ATM ngân hàng</div>
+                        <div class="charge-detail">Phí 1.760 + 3% giá trị nạp</div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="atm">
+                    <div class="card card-body d-flex align-items-center">
+                      <div class="bank-list"></div>
+                    </div>
+                  </div>
+                  <div class="charge-type" data-bs-toggle="collapse" href="#visa">
+                    <div class="charge-icon">
+                        <img src="../assets/images/visa.png" />
+                    </div>
+                    <div class="charge-content">
+                        <div class="charge-title">Thanh toán qua Paypal hoặc Master/Visa</div>
+                        <div class="charge-detail">Thẻ điện thoại</div>
+                    </div>
+                  </div>
+                  <div class="charge-type" data-bs-toggle="collapse" href="#banking">
+                    <div class="charge-icon">
+                        <img src="../assets/images/bank.png" />
+                    </div>
+                    <div class="charge-content">
+                        <div class="charge-title">Thanh toán trực tiếp qua ATM ngân hàng</div>
+                        <div class="charge-detail">Phí 1.760 + 3% giá trị nạp</div>
+                    </div>
+                  </div>
+                  <div class="collapse" id="banking">
+                    <div class="card card-body d-flex align-items-center banking-info">
+                        <p>Ngân hàng Vietcombank (VCB): 0041000333922</p>
+                        <p>Ngân hàng Vietinbank (VTB): 101868337700</p>
+                        <p>Chủ tài khoản: Hồ Thị Như Nguyệt</p>
+                        <p>Chi nhánh: Đà Nẵng</p>
+                        <p>Nội dung chuyển khoản: PD5b99fd076ccbeb40c6678508</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn-close-modal-money-charge border-0" data-bs-dismiss="modal">Đóng</button>
+                </div>
+              </div>
             </div>
         </div>
         <div class="modal fade" id="rankingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
