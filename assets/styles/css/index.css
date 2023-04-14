@@ -4,6 +4,7 @@
 @import url('./setting.css');
 @import url('./home.css');
 @import url('./ranking/ranking.css');
+@import url('./user_vip.css');
 
 * {
     font-family: 'Montserrat', sans-serif;

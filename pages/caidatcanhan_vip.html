@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
+    <title>Cài đặt cá nhân vip</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,12 +18,13 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/styles/css/index.css">
+    <link rel="stylesheet" href="../assets/styles/css/personal_setting/personal_setting_follow_list.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../assets/styles/js/sidebar.js"></script>
 </head>
 
 <body>
-    <div class="main-setting">
+    <div class="main-setting main-vip">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="home.html">
@@ -308,70 +309,186 @@
                     </div>
                     <div class="menu-sidebar">
                         <div class="list-group">
-                            <a href="caidat_thongke.html" class="list-group-item list-group-item-action">
-                                <div>Thống kê</div>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                            <a href="caidat_thongtin.html" class="list-group-item list-group-item-action">
-                                <div>Thông tin</div>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
                             <a href="caidat_caidat.html" class="list-group-item list-group-item-action">
                                 <div>Cài đặt</div>
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
-                            <a href="donate.html" class="list-group-item list-group-item-action active">
-                                <div>Donate</div>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
                             <a href="lichsu.html" class="list-group-item list-group-item-action">
-                                <div>Lịch sử</div>
+                                <div>Lịch sử giao dịch</div>
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div>Sổ đen</div>
+                            <a href="caidatcanhan_danhsachtheodoi.html" class="list-group-item list-group-item-action">
+                                <div>Danh sách theo dõi</div>
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div>Rút tiền</div>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                            <a href="dieukienplayer.html" class="list-group-item list-group-item-action">
-                                <div>Điều kiện player</div>
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <div>Vip</div>
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9 main-content" id="main-content">
-                    <form class="form-inline" action="">
-                        <div class="row">
-                            <div class="col-12 pb-4">
-                                <label for="linkFB" class="form-label">Link donate của bạn</label>
-                                <div class="inner-addon right-addon">
-                                    <input type="text" id="linkFB" class="form-control input-custom fw-bolder pe-5" value="https://playerduo.com/player3215281341">
-                                    <img class="icon-share" src="../assets/images/share.png" alt="">
-                                </div>
+                    <div class="data-report">
+                        <div class="column-data">
+                            <div class="money">500,000đ</div>
+                            <div class="title">Tổng tiền đã nạp</div>
+                        </div>
+                        <div class="slash">|</div>
+                        <div class="column-data">
+                            <div class="money">150,000đ</div>
+                            <div class="title">Tổng tiền đã donate</div>
+                        </div>
+                        <div class="slash">|</div>
+                        <div class="column-data">
+                            <div class="money">12H</div>
+                            <div class="title">Số giờ đã thuê</div>
+                        </div>
+                    </div>
+                    <div class="total-amount-spent">
+                        Tổng chi tiêu của bạn: <span>500,000đ</span>
+                    </div>
+                    <div class="trophies-spending">
+                        <div class="row title-spending">
+                            <div class="col-3 title-spending-1">DANH HIỆU</div>
+                            <div class="col-9 title-spending-2">TỔNG CHI TIÊU</div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/1_medal_gold.png" alt="">
                             </div>
-                            <div class="col-12 pb-4">
-                                <label for="linkFB" class="form-label">Link hiển thị donate ( Add Webpage URL trong phần mềm Stream )</label>
-                                <div class="inner-addon right-addon">
-                                    <input type="text" id="linkFB" class="form-control input-custom fw-bolder pe-5" value="https://playerduo.com/donation-screen/5b99fd076ccbeb40c6678508">
-                                    <img class="icon-share" src="../assets/images/share.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 pb-5">
-                                <label for="linkFB" class="form-label">Link hiển thị bảng xếp hạng donate</label>
-                                <div class="inner-addon right-addon">
-                                    <input type="text" id="linkFB" class="form-control input-custom fw-bolder pe-5" value="https://playerduo.com/donation/day/1/5b99fd076ccbeb40c6678508">
-                                    <img class="icon-share" src="../assets/images/share.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 pb-4 text-center">
-                                <button class="btn-update">Cập nhật</button>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">1.000.000 đ</div>
                             </div>
                         </div>
-                    </form>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/2_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">2.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/3_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">5.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/4_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">10.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/5_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">20.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/6_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">40.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/7_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">70.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/8_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">100.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/9_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">150.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/10_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">250.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/11_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">500.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/12_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">1.000.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/13_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">1.500.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/14_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">2.000.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="row title-trophies">
+                            <div class="col-3 trophies">
+                                <img src="../assets/images/15_medal_gold.png" alt="">
+                            </div>
+                            <div class="col-9 spending">
+                                <div class="vertical-line">|</div>
+                                <div class="spending-money">3.000.000.000 đ</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
