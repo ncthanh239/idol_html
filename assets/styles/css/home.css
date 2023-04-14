@@ -255,6 +255,27 @@
     font-weight: 600;
 }
 
+@media screen and (min-width: 1024px){
+    .modal-money-charge-content {
+        width: 686px;
+        transform: translateX(-98px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .modal-money-charge-content {
+        width: auto;
+    }
+    #modalMoneycharge {
+        padding-right: 0 !important;
+    }
+
+    .bank-list {
+        width: 100% !important;
+        background-size: contain !important;
+    }
+}
+
 @media (max-width: 992px) {
     .banner-large, .banner-small {
         width: 100%;
@@ -308,4 +329,134 @@
         left: 30px;
         bottom: 16px;
     }
+}
+
+.btn-close-money-charge:hover {
+    border: 2px solid #BCC2D8;
+    background-color: #BCC2D8;
+    color: #ffffff;
+}
+
+.btn-close-money-charge::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 2px;
+    left: 12px;
+    top: 5px;
+    bottom: 5px;
+    transform: rotate(45deg);
+}
+.btn-close-money-charge::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    top:12px;
+    left: 5px;
+    right: 5px;
+    transform: rotate(45deg);
+}
+
+.btn-close-money-charge {
+    border-radius: 50%;
+    background-color: #BCC2D8;
+    padding: 0.5em;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #BCC2D8;
+    color: blue;
+    position: relative;
+    transform: scale(0.8);
+}
+
+#modalMoneycharge .modal-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    margin: auto;
+}
+
+#modalMoneycharge .modal-title strong {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.modal-money-charge-content {
+    background-color: #F7F8FC;
+}
+
+.charge-type {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 7px 0;
+
+}
+.charge-icon img {
+    width: 47px;
+    height: 38px;
+}
+
+.charge-content .charge-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: #333333;
+}
+.charge-content .charge-detail {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.series-card-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.btn-money-charge-submit {
+    background-color: #185ADD;
+    font-weight: 700;
+    font-size: 17px;
+    width: 256px;
+    height: 52px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.bank-list {
+    background: url("../../images/bank_list.png");
+    height: 239px;
+    width: 554px;
+}
+
+.banking-info p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#phone-card {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.btn-close-modal-money-charge {
+    background-color: #BCC2D8;
+    font-weight: 600;
+    font-size: 16px;
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    color: #fff;
 }
