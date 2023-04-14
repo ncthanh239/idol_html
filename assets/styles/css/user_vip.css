@@ -1,0 +1,54 @@
+.main-vip {
+    padding-bottom: 80px;
+}
+
+.total-amount-spent {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.total-amount-spent span {
+    font-weight: 600;
+}
+
+.title-spending {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.title-spending div {
+    font-size: 18px;
+}
+
+.title-spending-2 {
+    padding-left: 40px;
+}
+
+.title-trophies {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.trophies {
+    text-align: center;
+    line-height: 60px;
+}
+
+.spending {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.vertical-line {
+    font-weight: 400;
+    color: #dadeee;
+}
+
+.spending .spending-money {
+    padding-left: 40px;
+}
