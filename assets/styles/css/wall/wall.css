@@ -295,6 +295,23 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1024px){
+  .banner-user-info, .banner-action {
+    width: 80%;
+  }
+
+  .rent-now, .donate, .chat {
+    width: 270px;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    display: flex;
+  }
+  .chat span {
+    margin-left: 5px;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .banner-head-profile {
     flex-direction: column;
