@@ -18,6 +18,9 @@
   margin: 10px 0;
 }
 
+.history-data {
+  margin-top: 30px;
+}
 .column-data {
   text-align: center;
 }
@@ -125,5 +128,33 @@
   border-radius: 10px;
   padding: 0px 20px;
   margin: 5px 0;
+}
+
+.email-tab-pane-title {
+  font-size: 15px;
+  color: #ea1212;
+  font-weight: 600;
+}
+
+.wrap-btn-get-code {
+  position: relative;
+}
+
+.wrap-btn-get-code .btn-get-code {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  border: none;
+  background-color: #ACB2CA;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 50px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.wrap-btn-get-code .btn-get-code:hover {
+  background-color: #185ADD;
 }
 
