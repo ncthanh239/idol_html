@@ -1,4 +1,7 @@
-body{margin-top:20px;}
+body{
+  margin-top:20px;
+  overflow: hidden;
+}
 
 .chat-online {
     color: #34ce57
@@ -11,7 +14,7 @@ body{margin-top:20px;}
 .chat-messages {
     display: flex;
     flex-direction: column;
-    max-height: 800px;
+    max-height: 65vh;
     overflow-y: auto
 }
 
@@ -418,7 +421,7 @@ body{margin-top:20px;}
 
 .typing {
   position: sticky;
-  bottom: 150px;
+  bottom: 85px;
 }
 
 .typing-rounded {
@@ -478,7 +481,7 @@ body{margin-top:20px;}
     padding-left: 0;
   }
   .typing {
-    bottom: 90px;
+    bottom: 125px;
   }
   #open-sidebar {
     display: block;
